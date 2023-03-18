@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: 0;
+}
+body{
+    background-color: rgb(9, 31, 51);
+}
+.all-container{
+    max-width: 450px;
+    margin: 9em auto;
+    background-color: rgb(50, 127, 190);
+    padding: 1.9em;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em; 
+    color: rgb(0, 0, 0);
+}
+.hide{
+    display: none;
+}
+.all-container header{
+    text-align: center;
+    border-bottom: solid 2px rgb(180, 180, 216);
+    padding: 0 1rem 1rem;
+    font-size: 1.5em; 
+}
+#todo-form {
+    padding: 0.5em 6em;
+    border-bottom: solid 2px rgb(180, 180, 216);
+}
+#todo-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#todo-input{
+    padding: 0.7em;
+    font-size: 1em;
+}
+#todo-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+.todo{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center; 
+    background-color: rgba(76, 168, 221, 0.801);
+    margin-top: 1%;
+    flex-direction: row;
+    border-bottom:  1px solid #ddd;
+    transition: .3s;
+}
+h3{
+    padding: 11px 10px 11px;
+    flex: 1;
+    font-size: 0.9rem;
+}
+.form-control{
+    display: flex;
+}
+.form-control,  input {
+    margin-right: 0.5rem;
+}
+button{
+    background-color: rgb(239, 240, 247);
+    border: 1.9px solid rgb(22, 22, 143);
+    padding: 0.3em 0.9em;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: rgb(37, 72, 168);
+    color: aliceblue;
+}
+
+button i {
+    font-weight: bold;
+    font-size: 1.3em;
+    pointer-events: none;
+    color: rgb(5, 4, 4);
+} 
+button:hover>i{
+    color: aliceblue;
+}
+.done{
+    background-color: #32567a;
+}
+.done h3{
+    color: aliceblue;
+    text-decoration: line-through;
+    font-style: italic;
+}
